@@ -1,0 +1,24 @@
+<h1>Listing custom_objects</h1>
+
+<table>
+  <tr>
+    <th>First name  c</th>
+    <th>Last name  c</th>
+    <th>Phone  c</th>
+  </tr>
+
+<% @salesforce_custom_objects.each do |custom_object| %>
+  <tr>
+    <td><%=h custom_object.first_name__c %></td>
+    <td><%=h custom_object.last_name__c %></td>
+    <td><%=h custom_object.phone__c %></td>
+    <td><%= link_to 'Show', custom_object %></td>
+    <td><%= link_to 'Edit', edit_salesforce_custom_object_path(custom_object) %></td>
+    <td><%= link_to 'Destroy', custom_object, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New custom_object', new_salesforce_custom_object_path %>

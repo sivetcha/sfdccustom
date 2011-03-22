@@ -1,0 +1,24 @@
+<h1>Editing custom_object_c</h1>
+
+<% form_for(@custom_object_c) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :first_name__c %><br />
+    <%= f.text_field :first_name__c %>
+  </p>
+  <p>
+    <%= f.label :last_name__c %><br />
+    <%= f.text_field :last_name__c %>
+  </p>
+  <p>
+    <%= f.label :phone__c %><br />
+    <%= f.text_field :phone__c %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @custom_object_c %> |
+<%= link_to 'Back', custom_object_cs_path %>

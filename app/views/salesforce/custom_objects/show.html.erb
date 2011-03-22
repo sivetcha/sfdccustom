@@ -1,0 +1,18 @@
+<p>
+  <b>First name  c:</b>
+  <%=h @custom_object.first_name__c %>
+</p>
+
+<p>
+  <b>Last name  c:</b>
+  <%=h @custom_object.last_name__c %>
+</p>
+
+<p>
+  <b>Phone  c:</b>
+  <%=h @custom_object.phone__c %>
+</p>
+
+
+<%= link_to 'Edit', edit_salesforce_custom_object_path(@custom_object) %> |
+<%= link_to 'Back', salesforce_custom_objects_path %>

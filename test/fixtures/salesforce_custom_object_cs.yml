@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  first_name__c: MyString
+  last_name__c: MyString
+  phone__c: MyString
+
+two:
+  first_name__c: MyString
+  last_name__c: MyString
+  phone__c: MyString

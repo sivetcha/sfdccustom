@@ -1,0 +1,24 @@
+<h1>Listing custom_object_cs</h1>
+
+<table>
+  <tr>
+    <th>First name  c</th>
+    <th>Last name  c</th>
+    <th>Phone  c</th>
+  </tr>
+
+<% @custom_object_cs.each do |custom_object_c| %>
+  <tr>
+    <td><%=h custom_object_c.first_name__c %></td>
+    <td><%=h custom_object_c.last_name__c %></td>
+    <td><%=h custom_object_c.phone__c %></td>
+    <td><%= link_to 'Show', custom_object_c %></td>
+    <td><%= link_to 'Edit', edit_custom_object_c_path(custom_object_c) %></td>
+    <td><%= link_to 'Destroy', custom_object_c, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New custom_object_c', new_custom_object_c_path %>
